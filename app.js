@@ -7,7 +7,10 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
+console.log("file running");
+
 app.get("/api/aws", (req, res) => {
+  console.log("runing api");
   res.status(200).json({
     status: "Succes",
   });
