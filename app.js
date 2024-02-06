@@ -7,11 +7,10 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (res, res) => {
-  res.statusCode(200).json({
+app.get("/api/aws", (req, res) => {
+  res.status(200).json({
     status: "Succes",
   });
 });
-// global Error Control
 
 module.exports = app;
