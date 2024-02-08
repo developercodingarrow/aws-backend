@@ -9,14 +9,14 @@ app.use(express.json());
 
 console.log("file running");
 
-app.get("/expresapi", (req, res) => {
+app.get("/api", (req, res) => {
   console.log("runing api");
   res.status(200).json({
     status: "Succes",
   });
 });
 
-app.get("/expresapi/aws", (req, res) => {
+app.get("/api/aws", (req, res) => {
   console.log("running api");
   res.status(200).json({
     status: "Success",
