@@ -16,4 +16,11 @@ app.get("/aws", (req, res) => {
   });
 });
 
+app.get("/api/aws", (req, res) => {
+  console.log("running api");
+  res.status(200).json({
+    status: "Success",
+  });
+});
+
 module.exports = app;
