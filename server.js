@@ -22,7 +22,4 @@ mongoose
     console.log(err);
   });
 
-// app.listen(port, () => console.log(`--Server is Running on Port ${port}`));SS
-app.listen(port, "0.0.0.0", () => {
-  console.log(`Server  ${port}`);
-});
+app.listen(port, () => console.log(`--Server is Running on Port ${port}`));
